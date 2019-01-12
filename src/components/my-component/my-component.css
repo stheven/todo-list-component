@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.todo-component {
+  width: calc(100% - 40px);
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  border: 1px solid #dadada;
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+.todo-component .todo-title {
+  display: block;
+  text-align: center;
+  margin: 0 0 5px;
+}
+
+.todo-component .todo-form {
+  display: block;
+  padding: 20px 30px 20px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.todo-component .form-wrap {
+  position: relative;
+  height: 54px;
+}
+
+.todo-component .todo-form .btn-add-todo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #08f;
+  color: #fff;
+  padding: 4px 6px;
+  border: none;
+  height: 100%;
+  min-width: 75px;
+  font-size: 19px;
+  border-radius: 0 6px 6px 0;
+}
+
+.todo-component .todo-form label {
+  display: block;
+  height: 100%;
+}
+
+.todo-component .todo-form .newtodo {
+  min-height: 100%;
+  width: 100%;
+  padding: 0 84px 0 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(233, 233, 233, 0.77);
+  border-radius: 10px;
+  display: block;
+}
+
+.todo-component .todo-form .newtodo:focus {
+  border: 1px solid #08f;
+}
+
+.todo-component .todo-list {
+  margin: 20px 0 0;
+  list-style: none;
+  padding: 0 20px;
+  max-height: calc(100vh - 290px);
+  overflow-y: auto;
+}
+
+.todo-component .todo-list li.todo-item {
+  padding: 12px 15px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.todo-component .todo-list li.todo-item:not(:last-child) {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.todo-component .todo-actions {
+  margin: 0 0 0 auto;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+.todo-component .todo-actions li .btn {
+  border: none;
+  padding: 6px 10px;
+  color: #fff;
+  background: #80f;
+  border-radius: 6px;
+  margin: 0 0 0 5px;
+  cursor: pointer;
+}
+
+
+.todo-component .todo-actions li .btn-remove {
+  background: #F44336;
+}
+
+.todo-component .todo-actions li .btn-toggle.off {
+  background: #08f;
+
+}
+
+.todo-component .todo-actions li .btn-toggle.on {
+  background: #4CAF50;
+}
+
+.todo-component .filters {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 15px 0 0;
+  padding: 0;
+  list-style: none;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-component .filters > li {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 8px;
+  line-height: 20px;
+  padding: 7px 0;
+}
+
+.todo-component .filters > li label {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.todo-component .filters .input-hidden {
+  display: none;
+}
+
+.todo-component .filters .input-hidden + .input-help {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 7px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 4px 0 0;
+  transition: .25s ease;
+}
+
+.todo-component .filters .input-hidden:checked + .input-help {
+  background: #4CAF50;
+}
+
+@media screen and (max-width: 767px) {
+  .todo-component .todo-list .todo-name {
+    width: 100%;
+    display: block;
+    margin: 0 0 9px;
+  }
+
+  .todo-component .todo-list .todo-actions {
+    margin: 0;
+    width: 100%;
+  }
+
+  .todo-component .todo-form {
+    padding: 15px 0;
+  }
+
+
+  .todo-component .form-wrap {
+    height: auto;
+  }
+
+  .todo-component .todo-form .btn-add-todo {
+    position: static;
+    width: 100%;
+    margin: 10px 0 0;
+    border-radius: 5px;
+    height: 54px;
+  }
+
+  .todo-component .todo-form .newtodo {
+    padding: 0 20px;
+    height: 54px;
+  }
+
+  .todo-component .filters {
+    justify-content: flex-start;
+  }
+}
