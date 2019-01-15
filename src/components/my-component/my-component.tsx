@@ -122,7 +122,11 @@ export class MyComponent {
 
     return (
       <div class="todo-component">
-        <h1 class="todo-title">My To Do List [{this.filter}]</h1>
+      <div class="header">
+          <h1 class="todo-title">My To Do List</h1>
+          {this.filter !== "all" && <p>{this.filter}</p>}
+      </div>
+
         <form onSubmit={this.add} class="todo-form">
           <div class="form-wrap">
             <label htmlFor="newTodo">

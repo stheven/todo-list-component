@@ -13,10 +13,16 @@
   box-sizing: border-box;
 }
 
+.todo-component .header {
+  margin: 0 0 5px;
+  text-align: center;
+}
+.todo-component .header p {
+  margin: 0;
+}
 .todo-component .todo-title {
   display: block;
-  text-align: center;
-  margin: 0 0 5px;
+  margin: 0;
 }
 
 .todo-component .todo-form {
