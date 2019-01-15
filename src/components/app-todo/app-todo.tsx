@@ -3,11 +3,11 @@ import { Component, State } from '@stencil/core';
 const LOCAL_NAME = `todo-list-component`;
 
 @Component({
-  tag: 'my-component',
-  styleUrl: 'my-component.css',
+  tag: 'app-todo',
+  styleUrl: 'app-todo.css',
   shadow: true
 })
-export class MyComponent {
+export class AppTodo {
   @State() newTask = '';
   @State() filter = 'all';
   @State() onlyCompleted = false;

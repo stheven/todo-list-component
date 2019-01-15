@@ -12,32 +12,32 @@ import '@stencil/core';
 
 export namespace Components {
 
-  interface MyComponent {}
-  interface MyComponentAttributes extends StencilHTMLAttributes {}
+  interface AppTodo {}
+  interface AppTodoAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
   interface StencilElementInterfaces {
-    'MyComponent': Components.MyComponent;
+    'AppTodo': Components.AppTodo;
   }
 
   interface StencilIntrinsicElements {
-    'my-component': Components.MyComponentAttributes;
+    'app-todo': Components.AppTodoAttributes;
   }
 
 
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  interface HTMLAppTodoElement extends Components.AppTodo, HTMLStencilElement {}
+  var HTMLAppTodoElement: {
+    prototype: HTMLAppTodoElement;
+    new (): HTMLAppTodoElement;
   };
 
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement
+    'app-todo': HTMLAppTodoElement
   }
 
   interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'app-todo': HTMLAppTodoElement;
   }
 
 
