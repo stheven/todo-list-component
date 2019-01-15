@@ -33,9 +33,11 @@ export class MyComponent {
     isEditing: false,
     isCompleted: false,
   }];
+
   componentWillLoad(){
     this.todoList = JSON.parse(localStorage.getItem(`${LOCAL_NAME}`)) || []
   }
+
   remove = (id: number) => {
     const todoList = [...this.todoList];
     const idx = todoList.findIndex(item => item.id === id);
