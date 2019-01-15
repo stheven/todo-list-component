@@ -10,5 +10,18 @@
 
   <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
 
+<script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDqZKSADFkqLv0wSrEGyo2K_cQhx7_G_00",
+    authDomain: "todo-list-component.firebaseapp.com",
+    databaseURL: "https://todo-list-component.firebaseio.com",
+    projectId: "todo-list-component",
+    storageBucket: "todo-list-component.appspot.com",
+    messagingSenderId: "666059940232"
+  };
+  firebase.initializeApp(config);
+</script>
 </body>
 </html>
