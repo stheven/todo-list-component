@@ -18,7 +18,8 @@
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "dependencies": {
-    "@ionic/core": "^4.0.0-rc.1"
+    "@ionic/core": "^4.0.0-rc.1",
+    "ionicons": "^4.5.1"
   },
   "devDependencies": {
     "@stencil/core": "~0.16.2"
